@@ -14,7 +14,7 @@ def live_speech_to_text():
                 audio = recognizer.listen(source)
 
                 print("Recognizing...")
-                text = recognizer.recognize_sphinx(audio)  # For offline
+                text = recognizer.recognize_sphinx(audio)  
                 print(f"Recognized text: {text}")
 
             except sr.UnknownValueError:
